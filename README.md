@@ -78,6 +78,7 @@ _Notes_: I'm ordering a different wifi card that is Broadcom. MacOS just doesn't
 ## Issues
 - [x] Thunderbolt hotplug (does work if plugged in on boot) (refers to below for [BIOS Patches](#patches))
 - [x] Blackscreen after boot for 3 minutes (appears on this [post](https://www.tonymacx86.com/threads/bug-black-screen-3-minutes-after-booting-coffeelake-uhd-630.261131/))
+
 ~~Nvidia Graphics card (Only High Sierra with WebDrivers, this will probably one of the downside)~~
 
 ### Thunderbolt 3 notes:
@@ -112,9 +113,11 @@ Some of the tools needed for this steps:
     3. Boot from this USB stick, run `setup_var 0xA12 0x00` (I would still keep this USB stick around if you want to apply CFG-Lock patches found [here](https://khronokernel.github.io/Opencore-Vanilla-Desktop-Guide/extras/msr-lock.html))
     * Then run the command again.
 5. If successful then run `FPTw.exe -greset`
-6. Press F2 and voila
+6. Press F2 and voila!
 ### CFG-Lock
 Please follow [this](https://khronokernel.github.io/Opencore-Vanilla-Desktop-Guide/extras/msr-lock.html), but I did on Windows. Same applies.
+
+Follows recommend BIOS settings from OpenCore guide for the file inside this repo to work.
 
 ## Special thanks to 
 * [zacmks](https://github.com/zacmks) for the working-out-of-the-box config

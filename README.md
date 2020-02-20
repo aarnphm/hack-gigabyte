@@ -79,6 +79,7 @@ _Notes_: I'm ordering a different wifi card that is Broadcom. MacOS just doesn't
 ## Issues
 - [x] Thunderbolt hotplug (does work if plugged in on boot) (refers to below for [BIOS Patches](#patches))
 - [x] Blackscreen after boot for 3 minutes (appears on this [post](https://www.tonymacx86.com/threads/bug-black-screen-3-minutes-after-booting-coffeelake-uhd-630.261131/))
+    * Added AppleBacklightFixup.kext to L/E with `sudo cp -R ~/Downloads/RehabMan-BacklightFixup*/Release/AppleBacklightFixup.kext /Library/Extensions`. Download the kext [here](https://bitbucket.org/RehabMan/applebacklightfixup/downloads/)
 
 ~~Nvidia Graphics card (Only High Sierra with WebDrivers, this will probably one of the downside)~~
 

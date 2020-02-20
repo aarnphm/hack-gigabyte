@@ -78,7 +78,7 @@ _Notes_: I'm ordering a different wifi card that is Broadcom. MacOS just doesn't
 ## Issues
 - [x] Thunderbolt hotplug (does work if plugged in on boot) (refers to below for [BIOS Patches](#patches))
 - [x] Blackscreen after boot for 3 minutes (appears on this [post](https://www.tonymacx86.com/threads/bug-black-screen-3-minutes-after-booting-coffeelake-uhd-630.261131/))
-- [ ] Nvidia Graphics card (Only High Sierra with WebDrivers, this will probably one of the downside)
+- ~~[ ] Nvidia Graphics card (Only High Sierra with WebDrivers, this will probably one of the downside)~~
 
 ### Thunderbolt 3 notes:
 - Hotplug can be implemented with unlocked bios (changing the BIOS settings) + SSDT
@@ -88,7 +88,9 @@ _Notes_: I'm ordering a different wifi card that is Broadcom. MacOS just doesn't
 ## Patches
 ### BIOS
 **DISCLAIMERS:DO THIS WITH YOUR OWN RISK.YOU CAN DEFINITELY BREAK YOUR LAPTOP. I'M NOT RESPONSIBLE FOR ANYONE BREAKING THEIR MACHINE**
+
 _This patches won't do anything sketch to your laptop, just open more options for the sake of customizing it for OpenCore_
+
 With that out of the way, make sure that your bios is FB0A. You can get it [here](https://www.gigabyte.com/us/Laptop/AERO-15X--i7-8750H/support#support-dl-bios), and flashed it first before doing any modification. I can confirm that everything worked flawlessly with my laptop and this version of BIOS.
 For the sake of not ruining your laptop please do all BIOS work on **WINDOWS**
 Some of the tools needed for this steps:
@@ -115,10 +117,10 @@ Some of the tools needed for this steps:
 Please follow [this](https://khronokernel.github.io/Opencore-Vanilla-Desktop-Guide/extras/msr-lock.html), but I did on Windows. Same applies.
 
 ## Special thanks to 
-[zacmks](https://github.com/zacmks) for the working-out-of-the-box config
-[OpenCore](https://khronokernel.github.io/Opencore-Vanilla-Desktop-Guide/) straightforward guidebook
-[RehabMan](https://github.com/RehabMan) for his intuitive guide for DSDT patches
-[acidanthera](https://github.com/acidanthera) for the huge brain himself
-[corpnewt](https://github.com/corpnewt) for his amazing toolbox
-[Lost_N_BIOS](https://www.bios-mods.com/forum/Thread-REQUEST-Unlock-BIOS-for-Gigabyte-Aero-15x-v8?pid=154664#pid154664) for the sick BIOS modding
-[headkaze](https://www.bios-mods.com/forum/Thread-Gigabyte-Aero-15-v8-FB0A-BIOS-Unlocked)for his tutorials, I just basically put it in here for easy access
+* [zacmks](https://github.com/zacmks) for the working-out-of-the-box config
+* [OpenCore](https://khronokernel.github.io/Opencore-Vanilla-Desktop-Guide/) straightforward guidebook
+* [RehabMan](https://github.com/RehabMan) for his intuitive guide for DSDT patches
+* [acidanthera](https://github.com/acidanthera) for the huge brain himself
+* [corpnewt](https://github.com/corpnewt) for his amazing toolbox
+* [Lost_N_BIOS](https://www.bios-mods.com/forum/Thread-REQUEST-Unlock-BIOS-for-Gigabyte-Aero-15x-v8?pid=154664#pid154664) for the sick BIOS modding
+* [headkaze](https://www.bios-mods.com/forum/Thread-Gigabyte-Aero-15-v8-FB0A-BIOS-Unlocked)for his tutorials, I just basically put it in here for easy access

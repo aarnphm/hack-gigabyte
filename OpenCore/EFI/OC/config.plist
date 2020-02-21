@@ -136,8 +136,7 @@
 			</dict>
 		</array>
 		<key>Block</key>
-		<array>
-		</array>
+		<array/>
 		<key>Patch</key>
 		<array>
 			<dict>
@@ -496,8 +495,7 @@
 	<key>Booter</key>
 	<dict>
 		<key>MmioWhitelist</key>
-		<array>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AvoidRuntimeDefrag</key>
@@ -544,6 +542,8 @@
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
+				<key>disable_external_gpu</key>
+				<data>AQAAAA==</data>
 				<key>AAPL,ig-platform-id</key>
 				<data>CQCbPg==</data>
 				<key>enable-cfl-backlight-fix</key>
@@ -557,6 +557,22 @@
 	<dict>
 		<key>Add</key>
 		<array>
+			<dict>
+				<key>BundlePath</key>
+				<string>AppleBacklightFixup.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AppleBacklightFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
 			<dict>
 				<key>BundlePath</key>
 				<string>Lilu.kext</string>
@@ -949,8 +965,7 @@
 			<data></data>
 		</dict>
 		<key>Patch</key>
-		<array>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
@@ -988,16 +1003,15 @@
 	<key>Misc</key>
 	<dict>
 		<key>BlessOverride</key>
-		<array>
-		</array>
+		<array/>
 		<key>Boot</key>
 		<dict>
 			<key>BuiltinTextRenderer</key>
 			<false/>
 			<key>ConsoleBehaviourOs</key>
-			<string>Graphics</string>
+			<string>ForceGraphics</string>
 			<key>ConsoleBehaviourUi</key>
-			<string>Text</string>
+			<string>ForceText</string>
 			<key>ConsoleMode</key>
 			<string>Max</string>
 			<key>HibernateMode</key>
@@ -1007,7 +1021,7 @@
 			<key>PollAppleHotKeys</key>
 			<false/>
 			<key>Resolution</key>
-			<string>1920x1080</string>
+			<string>1920x1080@32</string>
 			<key>ShowPicker</key>
 			<true/>
 			<key>TakeoffDelay</key>
@@ -1026,11 +1040,10 @@
 			<key>DisplayLevel</key>
 			<integer>2147483714</integer>
 			<key>Target</key>
-			<integer>67</integer>
+			<integer>0</integer>
 		</dict>
 		<key>Entries</key>
-		<array>
-		</array>
+		<array/>
 		<key>Security</key>
 		<dict>
 			<key>AllowNvramReset</key>
@@ -1040,7 +1053,7 @@
 			<key>AuthRestart</key>
 			<false/>
 			<key>ExposeSensitiveData</key>
-			<integer>6</integer>
+			<integer>3</integer>
 			<key>HaltLevel</key>
 			<integer>0</integer>
 			<key>RequireSignature</key>
@@ -1090,7 +1103,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>igfxcflbklt=1 -cdfon brcmfx-country=#a debug=0x100 keepsyms=1</string>
+				<string>igfxcflbklt=1 -cdfon brcmfx-country=#a -wegnoegpu</string>
 			</dict>
 		</dict>
 		<key>Block</key>
@@ -1250,7 +1263,7 @@
 			<key>RequestBootVarRouting</key>
 			<true/>
 			<key>SanitiseClearScreen</key>
-			<true/>
+			<false/>
 			<key>UnblockFsConnect</key>
 			<false/>
 		</dict>

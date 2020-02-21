@@ -77,16 +77,19 @@ _Notes_: I'm ordering a different wifi card that is Broadcom. MacOS just doesn't
 - [x] Touchpad
 
 ## Issues
+- [x] ~~Nvidia Graphics card (Only High Sierra with WebDrivers, this will probably one of the downside)~~
 - [x] Thunderbolt hotplug (does work if plugged in on boot) (refers to below for [BIOS Patches](#patches))
 - [x] Blackscreen after boot for 3 minutes (appears on this [post](https://www.tonymacx86.com/threads/bug-black-screen-3-minutes-after-booting-coffeelake-uhd-630.261131/))
     * Added AppleBacklightFixup.kext to L/E with `sudo cp -R ~/Downloads/RehabMan-BacklightFixup*/Release/AppleBacklightFixup.kext /Library/Extensions`. Download the kext [here](https://bitbucket.org/RehabMan/applebacklightfixup/downloads/)
-
-~~Nvidia Graphics card (Only High Sierra with WebDrivers, this will probably one of the downside)~~
+- [ ] Cannot change brightness after applying a patch for blackscreen timeout 
+- [ ] IntelHDA kext via USB-C for display
 
 ### Thunderbolt 3 notes:
 - Hotplug can be implemented with unlocked bios (changing the BIOS settings) + SSDT
 - In order to fix the blackscreen problem appeared with CoffeeLake processor, we have to use OpenCore Debug version, which is also included in the repository
 - One can disable some debug `boot-args`, however, it is nice to see what happens and easier for debugging.
+- I can confirm that iGPU is wired to USB-C/Thunderbolt connection, whereas NVIDIA is wired to HDMI/DP. Therefore are forced to use USB-C port for display
+
 
 ## Patches
 ### BIOS

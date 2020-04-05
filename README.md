@@ -46,6 +46,7 @@ _Notes_: I'm ordering a different wifi card that is Broadcom. MacOS just doesn't
 ## How to use this repository
 - I uses OpenCore instead of Clover, so essentially just change everything in your EFI folder with mine. Quicknotes that I have OpenCore **DEBUG** version. 
 - Folder structure:
+		* `ClOVER`: Clover config, using at the moment since OpenCore 0.5.6 is unstable
     * `EFI/OC`: Compatible Kext, .efi, APCI patches, etc.
     * `EFI/BOOT`: BOOTx64.efi 
     * `BIOS/`: Some of the bios mod for FB0A (specifically for Aero 15)

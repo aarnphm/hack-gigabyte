@@ -44,10 +44,9 @@ I/O | Ports:
 _Notes_: I'm ordering a different wifi card that is Broadcom. MacOS just doesn't work with Intel card unfortunately (Mojave, High Seirra used to work). However, it is recommended to get a Broadcom-compatible card for future compatibility. 
 
 ## How to use this repository
-- I uses OpenCore instead of Clover, so essentially just change everything in your EFI folder with mine. Quicknotes that I have OpenCore **DEBUG** version. 
 - Folder structure:
-		* `ClOVER`: Clover config, using at the moment since OpenCore 0.5.6 is unstable
-    * `EFI/OC`: Compatible Kext, .efi, APCI patches, etc.
+	* `ClOVER`: Clover config, using at the moment since OpenCore 0.5.6 is unstable
+    * `EFI/OC`: Compatible Kext, .efi, APCI patches, etc. (__DEBUG VERSION__)
     * `EFI/BOOT`: BOOTx64.efi 
     * `BIOS/`: Some of the bios mod for FB0A (specifically for Aero 15)
 
@@ -132,4 +131,4 @@ Follows recommend BIOS settings from OpenCore guide for the file inside this rep
 * [acidanthera](https://github.com/acidanthera) for the huge brain himself
 * [corpnewt](https://github.com/corpnewt) for his amazing toolbox
 * [Lost_N_BIOS](https://www.bios-mods.com/forum/Thread-REQUEST-Unlock-BIOS-for-Gigabyte-Aero-15x-v8?pid=154664#pid154664) for the sick BIOS modding
-* [headkaze](https://www.bios-mods.com/forum/Thread-Gigabyte-Aero-15-v8-FB0A-BIOS-Unlocked)for his tutorials, I just basically put it in here for easy access
+* [headkaze](https://www.bios-mods.com/forum/Thread-Gigabyte-Aero-15-v8-FB0A-BIOS-Unlocked) for his tutorials, I just basically put it in here for easy access

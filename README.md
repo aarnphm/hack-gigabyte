@@ -1,7 +1,7 @@
 # Hackintosh
 Gigabyte Aero 15W with a spice of MacOS Mojave
 
-Full credits goes to [zacmks](https://github.com/zacmks/Hackintosh-Aero-15X) for his/her amazing work. I have some addon to fix some existing problems.
+Full credits goes to [zacmks](https://github.com/zacmks/Hackintosh-Aero-15X) for his amazing work. I have some addon to fix some existing problems.
 
 Please see his post on [tonymacx86](https://www.tonymacx86.com/threads/guide-aero-15x-v8-mojave-catalina.287164/) for macOS Mojave. I haven't tested with Catalina yet so I can't guarantee that the files I provided will work. 
 
